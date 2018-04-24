@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>  
+</head>
+
+<body oncontextmenu="return false">
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Quote<span>r</span></div>
+		</div>
+		<br>
+		<form name="login" method="post" action="checklogin">
+		<div class="login">
+				<input name="myusername" type="text" id="myusername" placeholder="User Name"><br>
+				<input name="mypassword" type="password" id="mypassword" placeholder="Password"><br>
+				<input type="submit" name="button" value="Login"/>
+				<input type="submit" formaction="register.php" name="button" value="Register"/>
+		</div>
+
+</form>
+
+</script>  
+</body>
+</html>

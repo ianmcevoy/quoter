@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Adding Lead</title>
+<style media="screen" type="text/css">
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: teal;
+    clear: left;
+    text-align: center;
+
+.container {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+   <h1>Quoter</h1>
+</header>
+<div class="container">
+<form action="addLead.php" method="post">
+	<p>
+    	<label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+    </p>
+    <p>
+    	<label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+    </p>
+    <p>
+    	<label for="dob">Date of Birth:</label>
+        <input type="text" name="dob" id="dob">
+    </p>
+    <p>
+    	<label for="mobileNumber">Mobile Number:</label>
+        <input type="text" name="mNum" id="mobileNumber">
+    </p>
+    <p>
+    	<label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+    </p>
+	<p>
+    	<label for="county">Eircode</label>
+        <input type="text" name="eircode" id="eircode">
+    </p>
+    <p>
+    	<label for="county">County:</label>
+        <input type="text" name="county" id="county">
+    </p>
+    <p>
+    	<label for="town">Nearest Town/Village:</label>
+        <input type="text" name="town" id="town">
+    </p>
+    <p>
+    	<label for="cover">Type of Cover:</label>
+        <input type="text" name="coverType" id="cover">
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</p>
+</div>
+<footer>Copyright &copy; Quoter</footer>
+</body>
+</html>

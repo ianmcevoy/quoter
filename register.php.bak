@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Adding Lead</title>
+<body>
+<p> Are you an independant broker looking for more business?</p>
+<form>
+	<p>
+    	<label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+    </p>
+    <p>
+    	<label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+    </p>
+    <p>
+    	<label for="dob">Date of Birth:</label>
+        <input type="text" name="dob" id="dob">
+    </p>
+    <p>
+    	<label for="mobileNumber">Mobile Number:</label>
+        <input type="text" name="mNum" id="mobileNumber">
+    </p>
+    <p>
+    	<label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+    </p>
+    <p>
+    	<label for="county">County:</label>
+        <input type="text" name="county" id="county">
+    </p>
+    <p>
+    	<label for="cover">Type of Cover:</label>
+        <input type="text" name="coverType" id="cover">
+    </p>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

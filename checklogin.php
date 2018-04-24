@@ -1,0 +1,44 @@
+<?php
+session_start();
+$error='';
+$host="localhost"; // Host name 
+$username="root"; // username 
+$password="password"; // password 
+$db_name="quoter"; // Database name 
+$tbl_name="brokers"; // Table name 
+
+// Connect to server and select databse.
+$connection = mysqli_connect($host, $username, $password)or die("cannot connect" . mysqli_connect_error()); 
+mysqli_select_db($connection, $db_name)or die("cannot select DB");
+
+
+//if($_SERVER["REQUEST_METHOD" == "POST"]) {
+// username and password sent from form 
+$myusername=$_POST['myusername']; 
+$mypassword=$_POST['mypassword']; 
+
+// To protect MySQL injection (more detail about MySQL injection)
+$myusername = stripslashes($myusername);
+$mypassword = stripslashes($mypassword);
+$myusername = mysqli_real_escape_string($connection, $myusername);
+$mypassword = mysqli_real_escape_string($connection, $mypassword);
+
+$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
+$result=mysqli_query($connection, $sql);
+
+// Mysql_num_row is counting table row
+$count=mysqli_num_rows($result);
+
+// If result matched $myusername and $mypassword, table row must be 1 row
+
+if($count==1){
+
+// Register $myusername, $mypassword and redirect to file "login_success.php"
+//session_register("myusername");
+$_SESSION['login_user']=$myusername;// Initializing Session
+$_SESSION['login_pass']=$mypassword;
+header("location: login_success.php"); // Redirecting To Other Page
+} else {
+echo "Wrong username or password";
+}
+?>

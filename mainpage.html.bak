@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+<style media="screen" type="text/css">
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: teal;
+    clear: left;
+    text-align: center;
+}
+body { font-size: 16px; width: 600px; margin: 25px auto;  }
+
+  button {
+  color:black;
+  display: inline;
+  margin: 30px;
+  padding: 7px 35px;
+  font: 300 150% langdon;
+  background: transparent;
+  border: 3px solid black;
+  cursor: pointer;
+} 
+
+button:hover {
+  background: #f7f7f7;
+  border: 1px solid #8b8b8b;
+}
+
+button:active {
+  background: #2e2e2e;
+  border: 1px solid black;
+  color: white;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Quoter</h1>
+</header>
+  
+	<a href="login.html"><button type="button">Broker</button>
+	<a href="AddingLead.html"><button type="button">Quote</button>
+
+
+<footer>Copyright &copy; Quoter</footer>
+
+</div>
+
+</body>
+</html>
